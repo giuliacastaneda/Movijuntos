@@ -1,29 +1,18 @@
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+## Movijuntos
+Uma aplicação web colaborativa para mapear, avaliar e compartilhar informações sobre acessibilidade em espaços públicos e privados de uso coletivo.
 
-## Título do Projeto
+<br><img width="350" alt="Captura de tela 2025-10-15 222920 (3)" src="https://github.com/user-attachments/assets/f0ee3b8e-c4de-49f9-bd30-0004e157f4c8" />
 
-Nome e marca do projeto
-
-## Identidade Visual (Marca, Design)
-
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
-
-> **Links Úteis**:
-> - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
-> - [7 dicas de design para criar apresentações de PowerPoint incríveis e eficientes](https://www.shutterstock.com/pt/blog/7-dicas-de-design-para-criar-apresentacoes-de-powerpoint-incriveis-e-eficientes)
-> - [Especialista do TED dá 10 dicas para criar slides eficazes e bonitos](https://soap.com.br/blog/especialista-do-ted-da-10-dicas-para-criar-slides-eficazes-e-bonitos)
+<br>O Logo une geolocalização (pin), comunidade (círculo de pessoas) e diversidade (cores).<br>
+Associado ao tema, reforça que a mobilidade não é apenas se deslocar fisicamente, mas também ter acesso justo, democrático e acessível à cidade e à vida social.
+</div>
 
 ## Conjunto de Slides (Estrutura)
 
-O grupo deve distribuir de forma coerente o conteúdo a ser apresentado, dentro do tempo determinado. Importante ressaltar a importância da descrição clara de todo o andamento do projeto, insumos gerados e requisitos atendidos.
- 
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
->
+
+[Slides do projeto Movijuntos](https://github.com/user-attachments/files/24019202/MOVIJUNTOS.1.pdf)
 
 ## Vídeo de apresentação - Etapa 01
 
@@ -33,30 +22,5 @@ https://github.com/user-attachments/assets/25ae7c27-f407-40a2-9506-3f54747dd9d4
 
 ## Vídeo de apresentação - Etapa 05
 
-Inclua aqui o vídeo de APRESENTAÇÃO FINAL do projeto produzido na Etapa 05.
+https://github.com/user-attachments/assets/19f1f6de-a1dc-494c-9d40-ef6f0ee7cafb
 
-### Orientações para Produção do Vídeo Pitch (Etapa 05)
-
-O vídeo, em formato de _pitch_, deve ter no máximo 3 minutos e apresentar, de forma objetiva e envolvente, o problema identificado, sua relevância e a solução desenvolvida. 
-Lembre-se: o objetivo é convencer o público da importância e impacto do seu trabalho.
-
-Para isso, segue uma sugestão de estrutura a ser seguida:
-- Comece com uma frase, dado ou situação que prenda a atenção do público.
-- Evite apresentações longas de equipe — o foco inicial é gerar interesse.
-- Descreva o problema identificado. 
-- Mostre, de preferência com números, como o problema afeta pessoas ou organizações no dia a dia.
-- Descreva consequências, prejuízos ou dificuldades causadas pela situação atual.
-- Reforce a urgência ou relevância de resolvê-lo.
-- Resuma muito brevemente a proposta de solução.
-- Explique de forma simples como a solução funciona.
-- Mostre o diferencial da proposta (o que a torna única ou melhor que alternativas existentes).
-- Gaste, pelo menos, 50% do tempo total do vídeo, apresentando uma demonstração da ferramenta desenvolvida, ressaltando suas funcionalidades, como essas funcionalidades atendem ao problema identificado e foque em interações-chave que reforcem o valor da solução para o usuário final.
-- Finalize com uma frase de impacto ou um convite à ação (por exemplo: “Com nossa solução, empresas e usuários podem…”).
-
-### Dicas extras 
-- Antes de gravar, escreva um roteiro detalhado com falas, tempo estimado e cenas.
-- Treine a apresentação para manter ritmo e naturalidade ou utilize alguma ferramenta de IA para a narração.
-- Grave em partes se necessário e edite para encaixar no tempo máximo.
-- Seja objetivo(a): cada segundo conta.
-- Evite termos técnicos excessivos — use linguagem clara e acessível.
-- Transmita entusiasmo e confiança no projeto.

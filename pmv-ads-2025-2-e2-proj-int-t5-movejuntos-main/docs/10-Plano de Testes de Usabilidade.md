@@ -57,6 +57,7 @@ Para garantir que o teste reflita o uso real do sistema, será escolhido partici
 - Login efetuado corretamente.
 - Processo realizado em tempo hábil.
 
+<hr>
 
 **Cenário 2: Recuperar Senha**
 
@@ -77,6 +78,7 @@ Para garantir que o teste reflita o uso real do sistema, será escolhido partici
 - Usuário entende o fluxo sem suporte externo.
 - Site compreende a troca da senha do usuário e libera seu acesso com a nova criada.
 
+<hr>
 
 **Cenário 3: Busca e Filtro de Locais**
 
@@ -96,7 +98,7 @@ Para garantir que o teste reflita o uso real do sistema, será escolhido partici
 - Local encontrado corretamente.
 - Filtros aplicados de forma intuitiva.
 
-
+<hr>
 
 **Cenário 4: Avaliar e Comentar Local**
 
@@ -117,9 +119,47 @@ Para garantir que o teste reflita o uso real do sistema, será escolhido partici
 - Avaliação e comentário com fotos salvos no sistema.
 - Nota atribuída corretamente.
 
+<hr>
 
+**Cenário 5: Cadastrar Local**
 
-**Cenário 5: Salvar Local como Favorito**
+**Objetivo:** Avaliar se o usuário consegue cadastrar um novo local, informando os dados básicos, acessibilidade e inclusão de fotos.
+
+**Contexto:** Usuário deseja cadastrar uma indústria de água na sua região.
+
+**Tarefa(s):** 
+ - Acesse o site e faça login.
+ - No menu principal, escolha a opção “Cadastrar novo local”.
+ - Preencha os campos obrigatórios como nome, tipo e endereço.
+ - Faça o upload de fotos.
+ - Salve o cadastro.
+ - Verifique se o local aparece corretamente no mapa do site..
+  
+**Critério(s) de Sucesso(s):**
+- Novo local salvo corretamente.
+- Novo local aparece no mapa interativo.
+
+<hr>
+
+**Cenário 6: Tirar uma Dúvida sobre como editar Meus Locais Cadastrados**
+
+**Objetivo:** Usuário deve tirar uma dúvida a respeito de acessar os Meus Locais Cadastrados
+
+**Contexto:** O usuário precisa alterar o nome do local que ele cadastrou errado.
+
+**Tarefa(s):** 
+
+- Acessar o site e realize login.
+- Em perfil, clicar em Meus Locais.
+- Renomear o local
+  
+**Critério(s) de Sucesso(s):**
+
+- Usuário consegue localizar e modificar o nome do local.
+
+<hr>
+
+**Cenário 7: Salvar Local como Favorito**
 
 **Objetivo:** Avaliar a clareza da função de salvar e acessar locais favoritos.
 
@@ -137,42 +177,7 @@ Para garantir que o teste reflita o uso real do sistema, será escolhido partici
 - Local salvo corretamente.
 - Usuário acessa facilmente a lista de favoritos.
 
-**Cenário 6: Denunciar comentário**
-
-**Objetivo:** Avaliar a opção de denunciar comentários inadequados.
-
-**Contexto:** O usuário está planejando ir a um restaurante que aparentemente tem boa acessibilidade. Ao ler avaliações, encontra um comentário que sugere comportamento discriminatório do estabelecimento (texto ofensivo ou desrespeitoso). Você quer denunciar o comentário para que a equipe do MoviJuntos verifique.
-
-**Tarefa(s):** 
-
-- Acessar o site e realize login.
-- No mapa, busque e abra a página do local.
-- Clique na opção Denunciar ao lado do comentário.
-- No formulário de denúncia, selecione um motivo (ex.: “Discurso de ódio”, “Informação falsa”, “Assédio”).
-- Envie a denúncia.
-  
-**Critério(s) de Sucesso(s):**
-
-- Usuário consegue localizar e submeter denúncia sem ajuda.
-- Mensagem de Denúncia realizada.
-  
-**Cenário 7: Cadastrar Local**
-
-**Objetivo:** Avaliar se o usuário consegue cadastrar um novo local, informando os dados básicos, acessibilidade e inclusão de fotos.
-
-**Contexto:** Usuário visitou recentemente uma biblioteca comunitária que possui boa acessibilidade (rampa de entrada, banheiros adaptados e sinalização em braile). Como ainda não está cadastrada no aplicativo, decide incluir esse local para que outros usuários também possam encontrá-lo.
-
-**Tarefa(s):** 
- - Acesse o site e faça login.
- - No menu principal, escolha a opção “Cadastrar novo local”.
- - Preencha os campos obrigatórios como nome, tipo e endereço.
- - Faça o upload de fotos.
- - Salve o cadastro.
- - Verifique se o local aparece corretamente no mapa do site..
-  
-**Critério(s) de Sucesso(s):**
-- Novo local salvo corretamente.
-- Novo local aparece no mapa interativo.
+<hr>
 
 ## Métodos de coleta de dados
 
