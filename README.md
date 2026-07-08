@@ -22,17 +22,6 @@ A proposta se justifica pela exclusão social gerada pela ausência de acessibil
 
 * Luciana de Nardin
 
-## Instruções de Instalação, Execução e Acesso
-
-**Acesso rápido (produção)**
-* URL da aplicação: https://seu-dominio.com/caminho
-* Status: online / instável / em manutenção (atualize conforme o caso)
-* Ambiente: produção / homologação
-
-**Usuário(s) de teste (se houver):**
-* Login: usuario_teste
-* Senha: senha_teste
-
 # Documentação
 
 <ol>
