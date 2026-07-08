@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Web_App_Movijuntos.Models.Criterio>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Rampas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Corrimaos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BanheiroAcess)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VagasEstacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SinalizacaoTatil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SinalizacaoSonora)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SinalizaçãoVisual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CaminhoLivre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PortasCorredor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avaliacao)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rampas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Corrimaos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BanheiroAcess)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VagasEstacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SinalizacaoTatil)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SinalizacaoSonora)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SinalizaçãoVisual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CaminhoLivre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PortasCorredor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Avaliacao.IdAvaliacao)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdCriterio">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdCriterio">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdCriterio">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

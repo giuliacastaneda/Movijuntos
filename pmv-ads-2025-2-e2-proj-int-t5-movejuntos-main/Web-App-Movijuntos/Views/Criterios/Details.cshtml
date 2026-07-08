@@ -1,0 +1,78 @@
+﻿@model Web_App_Movijuntos.Models.Criterio
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Criterio</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rampas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rampas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Corrimaos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Corrimaos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BanheiroAcess)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BanheiroAcess)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VagasEstacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VagasEstacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SinalizacaoTatil)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SinalizacaoTatil)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SinalizacaoSonora)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SinalizacaoSonora)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SinalizaçãoVisual)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SinalizaçãoVisual)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CaminhoLivre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CaminhoLivre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PortasCorredor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PortasCorredor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Avaliacao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Avaliacao.IdAvaliacao)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdCriterio">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

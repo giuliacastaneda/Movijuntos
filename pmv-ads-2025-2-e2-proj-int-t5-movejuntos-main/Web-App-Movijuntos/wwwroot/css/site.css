@@ -1,0 +1,51 @@
+﻿:root {
+    --primary-color: #0078D7;
+}
+
+body {
+    background-color: #f2f2f2;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #e0e0e0 !important;
+    }
+
+.navbar-brand {
+    color: white !important;
+    font-weight: 600;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+    .container.bg-white {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+    margin-top: 200px;
+}

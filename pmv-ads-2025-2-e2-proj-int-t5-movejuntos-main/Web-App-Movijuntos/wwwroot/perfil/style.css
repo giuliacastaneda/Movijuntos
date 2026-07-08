@@ -1,0 +1,169 @@
+﻿/* --- VARIÁVEIS E ESTILOS GLOBAIS --- */
+:root {
+    --cor-primaria: #4A6572;
+    --cor-secundaria: #D3E0EA;
+    --cor-azul: #1E90FF;
+    --cor-fundo: #F5F5F5;
+    --cor-texto: #2E2E2E;
+    --cor-borda: #E0E0E0;
+    --cor-branca: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- ESTRUTURA PRINCIPAL --- */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.image-panel {
+    flex: 1;
+    background-image: url('https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=2069&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+}
+
+.form-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* --- LOGO E TÍTULOS --- */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo h2 {
+        font-size: 24px;
+        color: var(--cor-primaria); /* Usando a cor primária para o logo */
+    }
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+    color: var(--cor-texto);
+}
+
+/* --- CAMPOS DE VISUALIZAÇÃO E EDIÇÃO --- */
+.info-field, .input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--cor-primaria); /* Cor primária para dar destaque às labels */
+}
+
+p {
+    background-color: var(--cor-branca);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-borda);
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: var(--cor-branca);
+    color: var(--cor-texto);
+}
+
+    input:focus {
+        outline: none;
+        border-color: var(--cor-azul);
+        box-shadow: 0 0 0 2px var(--cor-secundaria);
+    }
+
+/* --- BOTÕES --- */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+}
+
+    .btn-primary:hover {
+        filter: brightness(0.9); /* Escurece um pouco o botão no hover */
+    }
+
+.btn-secondary {
+    background-color: var(--cor-branca);
+    color: var(--cor-azul);
+    border: 1px solid var(--cor-azul);
+}
+
+    .btn-secondary:hover {
+        background-color: var(--cor-secundaria);
+    }
+
+/* --- MENSAGEM DE SUCESSO --- */
+#success-message {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-primaria);
+}
+
+/* --- RESPONSIVIDADE PARA CELULARES --- */
+@media (max-width: 768px) {
+    .image-panel {
+        display: none; /* Esconde a imagem em telas pequenas */
+    }
+
+    .form-panel {
+        padding: 20px;
+    }
+}

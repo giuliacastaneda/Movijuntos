@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Web_App_Movijuntos.Models.Avaliacao>
+
+@{
+    ViewData["Title"] = "Avaliações";
+}
+
+<h1>Avaliações</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">Cadastrar nova avaliação</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Data)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nota)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Local)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nota)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Local.Endereco)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdAvaliacao">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdAvaliacao">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdAvaliacao">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

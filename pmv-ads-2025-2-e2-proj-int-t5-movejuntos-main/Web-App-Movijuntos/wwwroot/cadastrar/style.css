@@ -1,0 +1,227 @@
+﻿:root {
+    --cor-primaria: #4A6572;
+    --cor-secundaria: #D3E0EA;
+    --cor-azul: #1E90FF;
+    --cor-fundo: #F5F5F5;
+    --cor-texto: #2E2E2E;
+    --cor-borda: #E0E0E0;
+    --cor-branca: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: var(--cor-fundo);
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+#imagemMapa {
+    flex: 2;
+    background-image: url('../imagens/pessoa-atravessando-rua.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#cadastrarForm {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 0 20px;
+    margin: 20px 0px;
+}
+
+#cadastrarForm img {
+    width: 80px;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+#cadastrarForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cadastrarForm input {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-borda);
+    
+}
+
+#cadastrarForm input:focus {
+    outline: none;
+    border-color: var(--cor-azul);
+    box-shadow: 0 0 5px var(--cor-azul);
+}
+
+#cadastrarForm button {
+    border-radius: 5px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    margin-top: 40px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#cadastrarForm button:hover {
+    background-color: var(--cor-azul);
+    transition: 0.3s;
+    color: var(--cor-branca);
+}
+
+#msgErro {
+    color: red;
+}
+
+#cadastrarForm > a {
+    align-self: center;
+    margin-top: 10px;
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.spinner {
+    border: 3px solid var(--cor-borda);
+    border-top: 3px solid var(--cor-azul);
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: girar 1s linear infinite;
+}
+
+#modalConfirmarEmail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#conteinerCentral {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-branca);
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    font-family: Arial, sans-serif;
+}
+
+#conteinerCentral h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: var(--cor-primaria);
+}
+
+#conteinerCentral p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--cor-texto);
+}
+
+#conteinerCentral input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+#msgErroCodigo {
+    color: #f44336;
+    font-size: 12px;
+    height: 18px;
+    margin-bottom: 15px;
+}
+
+#conteinerCentral button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#btnCancelarCodigo {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+#btnCancelarCodigo:hover {
+    background-color: #cbdde4; 
+}
+
+#btnConfirmarCodigo {
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+}
+
+#btnConfirmarCodigo:hover {
+    background-color: #187bdf; 
+}
+
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cadastrarForm button:hover {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-texto);
+    }
+
+    #imagemMapa {
+        display: none;
+    }
+
+    #cadastrarForm {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+    }
+}

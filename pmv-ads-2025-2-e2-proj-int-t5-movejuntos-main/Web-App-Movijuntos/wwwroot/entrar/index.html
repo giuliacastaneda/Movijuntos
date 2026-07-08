@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Entrar</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../imagens/iconBar-movijuntos.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="imagemMapa"></div>
+    <form id="entrarForm">
+        <img src="../imagens/icon-movijuntos.png" />
+        <h2>Movijuntos</h2>
+        <input type="email" id="inputEmail" name="email" placeholder="Email" required />
+        <input type="password" id="inputSenha" name="password" placeholder="Senha" required />
+        <button id="btnLogin" type="button">
+
+            <span class="spinner" style="display: none;"></span>
+        </button>
+        <a id="btnEsqueceuSenha" href="#">Esqueceu a senha?</a>
+        <a href="../cadastrar/">Criar uma conta</a>
+    </form>
+    <div id="modalConfirmarEmail" style="display: none;">
+        <div id="conteinerCentral">
+            <h2>Confirmar Email</h2>
+            <p>Um código de confirmação foi enviado para o email cadastrado. Por favor, verifique sua caixa de entrada e insira o código abaixo para confirmar seu email.</p>
+            <input id="codigoField" title="Código de Confirmação" type="text" placeholder="Código de Confirmação" required />
+            <div id="msgErroCodigo"> </div>
+            <button id="btnCancelarCodigo" type="button">Cancelar</button>
+            <button id="btnConfirmarCodigo" type="button">Confimar</button>
+        </div>
+    </div>
+</body>
+</html>

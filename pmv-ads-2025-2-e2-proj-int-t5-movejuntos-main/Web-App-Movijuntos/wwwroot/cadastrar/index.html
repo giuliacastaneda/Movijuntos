@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Entrar</title>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../imagens/iconBar-movijuntos.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="imagemMapa"></div>
+    <form id="cadastrarForm">
+        <img src="../imagens/icon-movijuntos.png" />
+        <h2>Movijuntos</h2>
+        <input id="nomeField" title="Nome Pessoal" type="text" placeholder="Nome" required />
+        <input id="nascimentoField" title="Data de Nascimento" type="date" min="1920-01-01" max="" required />
+        <input id="userField" title="Nome de Usuário" type="text" placeholder="Nome de Usuário" required />
+        <input id="emailField" title="Email" type="email" placeholder="Email" required />
+        <input id="senhaField" title="Senha" type="password" placeholder="Senha" required />
+        <input id="senhaConfirmarField" title="Confirmar Senha" type="password" placeholder="Confirmar Senha" required />
+        <h4 id="infoCadastro">A senha deve conter, pelo menos: 6 caracteres, 1 letra minúscula, 1 letra maiúscula, 1 número e 1 caracter especial.</h4>
+        <div id="msgErro">&nbsp;</div>
+        <button id="btnCadastrar" type="button">
+            
+            <span class="spinner" style="display: none;"></span>
+        </button>
+        
+        <a href="../entrar/">Já possui uma conta? Entre aqui!</a>
+    </form>
+    <div id="modalConfirmarEmail" style="display: none;">
+        <div id="conteinerCentral">
+            <h2>Confirmar Email</h2>
+            <p>Um código de confirmação foi enviado para o email cadastrado. Por favor, verifique sua caixa de entrada e insira o código abaixo para confirmar seu email.</p>
+            <input id="codigoField" title="Código de Confirmação" type="text" placeholder="Código de Confirmação" required />
+            <div id="msgErroCodigo"> </div>
+            <button id="btnCancelarCodigo" type="button">Cancelar</button>
+            <button id="btnConfirmarCodigo" type="button">Confimar</button>
+        </div>
+    </div>
+</body>
+</html>

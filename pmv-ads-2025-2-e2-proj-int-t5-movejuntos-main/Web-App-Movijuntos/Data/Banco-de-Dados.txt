@@ -1,0 +1,1 @@
+﻿Coloque nesta pasta as classes e métodos relacionados ao banco de dados.

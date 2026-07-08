@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliar Local</title>
+    <link rel="stylesheet" href="./avaliacao.css">
+    <script src="./avaliacao.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Avaliar Local</h1>
+
+        <!-- ⭐ Avaliação por estrelas -->
+        <div class="stars" id="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <input type="hidden" id="nota" name="nota">
+
+        <!-- Formulário -->
+        <form id="avaliacaoForm">
+            <div class="question">
+                <label>Possui rampas?</label>
+                <input type="radio" name="rampas" value="sim"> Sim
+                <input type="radio" name="rampas" value="nao"> Não
+            </div>
+
+            <div class="question">
+                <label>Possui corrimãos?</label>
+                <input type="radio" name="corrimaos" value="sim"> Sim
+                <input type="radio" name="corrimaos" value="nao"> Não
+            </div>
+
+            <div class="question">
+                <label>Possui banheiros acessíveis?</label>
+                <input type="radio" name="banheiros" value="sim"> Sim
+                <input type="radio" name="banheiros" value="nao"> Não
+            </div>
+
+            <div class="question">
+                <label>Possui vagas reservadas?</label>
+                <input type="radio" name="vagas" value="sim"> Sim
+                <input type="radio" name="vagas" value="nao"> Não
+            </div>
+
+            <div class="question">
+                <label>Possui sinalização tátil?</label>
+                <input type="radio" name="tatil" value="sim"> Sim
+                <input type="radio" name="tatil" value="nao"> Não
+            </div>
+
+            <div class="question">
+                <label>Possui sinalização visual?</label>
+                <input type="radio" name="visual" value="sim"> Sim
+                <input type="radio" name="visual" value="nao"> Não
+            </div>
+
+            <div class="question">
+                <label>Possui portas e corredores acessíveis?</label>
+                <input type="radio" name="portas" value="sim"> Sim
+                <input type="radio" name="portas" value="nao"> Não
+            </div>
+
+            <div class="question">
+                <label>Possui circulação livre de obstáculos?</label>
+                <input type="radio" name="obstaculos" value="sim"> Sim
+                <input type="radio" name="obstaculos" value="nao"> Não
+            </div>
+
+            <div class="comentario">
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="3" maxlength="500"></textarea>
+            </div>
+
+            <div class="upload">
+                <label for="fotos">Adicionar fotos (máximo 2 - PNG, JPG, JPEG, PDF, RAW):</label>
+                <input type="file" id="fotos" name="fotos" multiple accept=".png,.jpg,.jpeg,.pdf,.raw">
+            </div>
+
+            <button type="submit" class="btn">Postar Avaliação</button>
+        </form>
+
+        <p id="mensagem"></p>
+    </div>
+</body>
+</html>
